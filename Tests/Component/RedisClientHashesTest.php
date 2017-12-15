@@ -9,8 +9,9 @@
 namespace Dawen\Bundle\PhpRedisBundle\Tests\Component;
 
 use Dawen\Bundle\PhpRedisBundle\Component\RedisClient;
+use PHPUnit\Framework\TestCase;
 
-class RedisClientHashesTest extends \PHPUnit_Framework_TestCase
+class RedisClientHashesTest extends TestCase
 {
     /** @var \PHPUnit_Framework_MockObject_MockObject */
     private $redis = null;

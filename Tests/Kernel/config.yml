@@ -15,9 +15,9 @@ services:
   http_kernel:
     class: Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel
     arguments:
-      - @event_dispatcher
-      - @service_container
-      - @controller_resolver
+      - "@event_dispatcher"
+      - "@service_container"
+      - "@controller_resolver"
 
   logger:
     class: Psr\Log\NullLogger

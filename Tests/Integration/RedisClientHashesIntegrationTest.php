@@ -348,7 +348,7 @@ class RedisClientHashesIntegrationTest extends AbstractKernelAwareTest
         try {
             $resultIncr = $this->client->hIncrByFloat($key, $hashKey, $incr);
         } catch(\Exception $exxception) {
-            $this->assertContains('to be double, string given',$exxception->getMessage());
+            $this->assertContains('expects parameter 3 to be float, string given',$exxception->getMessage());
             return true;
         }
 

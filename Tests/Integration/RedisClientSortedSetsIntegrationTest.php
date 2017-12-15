@@ -767,7 +767,7 @@ class RedisClientSortedSetsIntegrationTest extends AbstractKernelAwareTest
             $this->client->zRangeByLex($key,  '-',  '+', -2, 4)
         );
 
-        $this->setExpectedException('InvalidArgumentException');
+        $this->expectException(\InvalidArgumentException::class);
 
         $this->client->zRangeByLex($key, '-', '+', 2);
     }
@@ -837,7 +837,7 @@ class RedisClientSortedSetsIntegrationTest extends AbstractKernelAwareTest
             $this->client->zRevRangeByLex($key,  '+',  '-', -2, 4)
         );
 
-        $this->setExpectedException('InvalidArgumentException');
+        $this->expectException(\InvalidArgumentException::class);
 
         $this->client->zRevRangeByLex($key, '-', '+', 2);
     }

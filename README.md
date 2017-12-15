@@ -1,7 +1,7 @@
 PhpRedisBundle
 ==============
 
-Symfony 2 Bundle for phpredis extension
+Symfony 4 Bundle for phpredis extension
 
 ---
 
@@ -86,7 +86,7 @@ php_redis:
 
 ---
 
-Testing within Symfony2
+Testing within Symfony4
 =======================
 
 for running the unit and integration tests add test parameters to your config:
